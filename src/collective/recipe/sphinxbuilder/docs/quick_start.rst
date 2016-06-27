@@ -10,19 +10,19 @@ a section like this::
         ...
         sphinxbuilder
         ...
-    
+
     [sphinxbuilder]
     recipe = collective.recipe.sphinxbuilder
     source = ${buildout:directory}/docs-source
     build = ${buildout:directory}/docs
-    
+
 
 
 Run your buildout and you will get a few new scripts in the `bin` folder,
 called:
 
     - `sphinx-quickstart`, to quickstart sphinx documentation
-    - `sphinxbuilder`, script that will 
+    - `sphinxbuilder`, script that will
 
 To quickstart a documentation project run, as you would normaly do with Sphinx::
 
@@ -40,7 +40,7 @@ You will get a shiny Sphinx documenation in `docs/html`.
 Write your documentation, go in `docs-source`.
 Everytime source is modified, `sphinxbuilder` run script again.
 
-A good starting point to write your documentation is: 
+A good starting point to write your documentation is:
 http://sphinx.pocoo.org/contents.html.
 
 
@@ -55,7 +55,7 @@ Usage with Plone 4 is even easier::
         ...
         sphinxbuilder
         ...
-    
+
     [sphinxbuilder]
     recipe = collective.recipe.sphinxbuilder
     interpreter = ${buildout:directory}/bin/zopepy

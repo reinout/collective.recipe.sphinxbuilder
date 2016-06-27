@@ -6,7 +6,7 @@ Sphinx is the mainly tool in the Python community to build documentation. See
 http://sphinx.pocoo.org.
 
 It is now used for instance by Python. See http://docs.python.org and many
-others 
+others
 
 Sphinx uses reStructuredText, and can be used to write your buildout-based
 application. This recipe sets everything up for you, so you can provide a

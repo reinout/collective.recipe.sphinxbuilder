@@ -26,6 +26,3 @@ Table of contents
     reference
     history
     contributors
-
-
-
