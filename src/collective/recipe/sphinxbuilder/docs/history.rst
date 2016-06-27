@@ -31,15 +31,15 @@ Changes
 0.7.3 (2013-02-16)
 ==================
 
-- patch sphinx-build script to terminate with sys.exit()
-- add warnings-html makefile option
-- install sphinx-apidoc and sphinx-autogen scripts
-- rename all txt files to rst ones
+- Patch sphinx-build script to terminate with sys.exit()
+- Add warnings-html makefile option
+- Install sphinx-apidoc and sphinx-autogen scripts
+- Rename all txt files to rst ones
 
 0.7.2 (2012-10-22)
 ==================
 
-- requires Sphinx >= 1.1
+- Requires Sphinx >= 1.1
 
 0.7.1 (2012-04-29)
 ==================
@@ -52,34 +52,34 @@ Changes
 0.7.0 (2010-09-10)
 ==================
 
-- requires Sphinx >= 1.0
+- Requires Sphinx >= 1.0
 
 0.6.3.3 (2010-07-15)
 ====================
 
-- added `doctest` option to recipe's `output` options (tseaver)
+- Added `doctest` option to recipe's `output` options (tseaver)
 
-- relaxed required version of Sphinx to allow versions later than
+- Relaxed required version of Sphinx to allow versions later than
   0.6.4 (but still less than 0.7dev).
 
 0.6.3.2 (2010-02-08)
 ====================
 
-- fixed interpreter options [iElectric]
+- Fixed interpreter options [iElectric]
 
 0.6.3.1 (2009-09-25)
 ====================
 
-- problems with previous release [garbas]
+- Problems with previous release [garbas]
 
 0.6.3 (2009-09-09)
 ==================
 
-- update to Sphinx 0.6.3 [garbas]
-- simplify sphinxbuilder [garbas]
-- update documentation [garbas]
-- interpreter options [iElectric]
-- added logging [iElectric]
+- Update to Sphinx 0.6.3 [garbas]
+- Simplify sphinxbuilder [garbas]
+- Update documentation [garbas]
+- Interpreter options [iElectric]
+- Added logging [iElectric]
 
 0.5.0 (2008-12-06)
 ==================
@@ -96,12 +96,12 @@ Changes
 0.2.0 (2008-11-11)
 ==================
 
-- source tree generated every time under
+- Source tree generated every time under
   parts/<buildout-section-name> [Rok Garbas]
-- finds conf options, source, static and template files using
+- Finds conf options, source, static and template files using
   entry_point 'collective.recipe.sphinxbuilder' [Rok Garbas]
-- custom source folder at docs/source [Rok Garbas]
-- build section moved to docs/html, docs/latex [Rok Garbas]
+- Custom source folder at docs/source [Rok Garbas]
+- Build section moved to docs/html, docs/latex [Rok Garbas]
 
 0.1.1 (2008-09-11)
 ==================
