@@ -2,8 +2,8 @@
 Changes
 =======
 
-0.8.3 (unreleased)
-==================
+0.9 (2016-06-27)
+================
 
 - Added automatic testing with travis-ci.org. [reinout]
 
