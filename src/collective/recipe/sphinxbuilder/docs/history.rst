@@ -7,6 +7,9 @@ Changes
 
 - Added automatic testing with travis-ci.org. [reinout]
 
+- Trying to fix install on python 3. [reinout]
+
+
 0.8.2 (2013-11-28)
 ==================
 
