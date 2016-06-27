@@ -2,34 +2,34 @@
 """
 This module contains the tool of collective.recipe.sphinxbuilder
 """
+import codecs
 import os
 from setuptools import setup, find_packages
 
+
 def read(*rnames):
-    return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
+    filename = os.path.join(os.path.dirname(__file__), *rnames)
+    try:
+        with codecs.open(filename, encoding='utf-8') as f:
+            return unicode(f.read())
+    except NameError:
+        with open(filename, 'r', encoding='utf-8') as f:
+            return f.read()
+
 
 version = '0.8.2'
 
-long_description = (
-    read('README.rst')
-    + '\n' +
-    'Detailed Documentation\n'
-    '**********************\n'
-    + '\n' +
-    read('src', 'collective', 'recipe', 'sphinxbuilder', 'docs', 'about_sphinx.rst')
-    + '\n' +
-    read('src', 'collective', 'recipe', 'sphinxbuilder', 'docs', 'quick_start.rst')
-    + '\n' +
-    read('src', 'collective', 'recipe', 'sphinxbuilder', 'docs', 'options.rst')
-    + '\n' +
-    read('src', 'collective', 'recipe', 'sphinxbuilder', 'docs', 'usage.rst')
-    + '\n' +
-    read('src', 'collective', 'recipe', 'sphinxbuilder', 'docs', 'contributors.rst')
-    + '\n' +
+long_description = u'\n\n'.join([
+    read('README.rst'),
+    'Detailed Documentation\n' +
+    '**********************\n',
+    read('src', 'collective', 'recipe', 'sphinxbuilder', 'docs', 'about_sphinx.rst'),
+    read('src', 'collective', 'recipe', 'sphinxbuilder', 'docs', 'quick_start.rst'),
+    read('src', 'collective', 'recipe', 'sphinxbuilder', 'docs', 'options.rst'),
+    read('src', 'collective', 'recipe', 'sphinxbuilder', 'docs', 'usage.rst'),
+    read('src', 'collective', 'recipe', 'sphinxbuilder', 'docs', 'contributors.rst'),
     read('src', 'collective', 'recipe', 'sphinxbuilder', 'docs', 'history.rst')
-    )
-
-
+    ])
 
 
 setup(name='collective.recipe.sphinxbuilder',

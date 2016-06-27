@@ -11,7 +11,7 @@ The recipe supports the following options:
         Speficy the source directory of documentation.
 
     outputs (default: `html`)
-        Multiple-line value that defines what kind of output to produce. 
+        Multiple-line value that defines what kind of output to produce.
         Can be `doctest`, `html`, `latex`, `pdf` or `epub`.
 
     script-name (default: name of buildout section)
@@ -26,5 +26,3 @@ The recipe supports the following options:
     products
         Extra product directories to be extend the Products namespace for
         old-style Zope Products.
-
-
