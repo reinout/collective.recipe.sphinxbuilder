@@ -9,6 +9,11 @@ Changes
 
 - Trying to fix install on python 3. [reinout]
 
+- Current code location is
+  https://github.com/reinout/collective.recipe.sphinxbuilder [reinout]
+
+- Documentation is now on readthedocs:
+  http://collectiverecipesphinxbuilder.readthedocs.io/ [reinout]
 
 0.8.2 (2013-11-28)
 ==================
