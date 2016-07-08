@@ -45,7 +45,7 @@ class Recipe(object):
 
         # 1. CREATE BUILD FOLDER IF IT DOESNT EXISTS
         if not os.path.exists(self.build_dir):
-            os.mkdir(self.build_dir)
+            os.makedirs(self.build_dir)
 
         # 2. RESOLVE SOURCE PATH
         if not os.path.isabs(self.source_dir):
