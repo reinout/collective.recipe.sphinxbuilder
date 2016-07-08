@@ -144,6 +144,8 @@ class Recipe(object):
         # change last line from sphinx.main() to sys.exit(sphinx.main())
         # so that errors are correctly reported to Travis CI.
         sb = os.path.join(self.bin_dir, 'sphinx-build')
+        if sys.platform == 'win32':
+            sb += '-script.py'
         temp_lines = []
         sb_file = open(sb, 'r')
         for line in sb_file:
