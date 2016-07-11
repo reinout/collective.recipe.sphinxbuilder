@@ -5,7 +5,7 @@ Changes
 1.0 (unreleased)
 ================
 
-- Nothing changed yet.
+- Added windows support. [tkhyn]
 
 
 0.9 (2016-06-27)
