@@ -45,7 +45,7 @@ class Recipe(object):
 
         # 1. CREATE BUILD FOLDER IF IT DOESNT EXISTS
         if not os.path.exists(self.build_dir):
-            os.mkdir(self.build_dir)
+            os.makedirs(self.build_dir)
 
         # 2. RESOLVE SOURCE PATH
         if not os.path.isabs(self.source_dir):
@@ -144,6 +144,8 @@ class Recipe(object):
         # change last line from sphinx.main() to sys.exit(sphinx.main())
         # so that errors are correctly reported to Travis CI.
         sb = os.path.join(self.bin_dir, 'sphinx-build')
+        if sys.platform == 'win32':
+            sb += '-script.py'
         temp_lines = []
         sb_file = open(sb, 'r')
         for line in sb_file:
