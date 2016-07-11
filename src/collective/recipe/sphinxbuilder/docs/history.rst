@@ -2,7 +2,7 @@
 Changes
 =======
 
-1.0 (unreleased)
+1.0 (2016-07-11)
 ================
 
 - Added windows support. [tkhyn]
