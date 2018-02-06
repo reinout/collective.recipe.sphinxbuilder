@@ -52,6 +52,7 @@ The content of the script is a simple shell script::
 
     >>> script = join(sample_buildout, 'bin', 'sphinxbuilder')
     >>> print(open(script).read())
+    #!/bin/bash
     cd ...docs
     make html
 
@@ -84,6 +85,7 @@ If we want `latex`, we need to explicitly define it::
 Let's see our script now::
 
     >>> cat(script)
+    #!/bin/bash
     cd ...docs
     make html
     make latex
@@ -126,6 +128,7 @@ If we want `pdf`, we need to explicitly define it::
 Let's see our script now::
 
     >>> cat(script)
+    #!/bin/bash
     cd ...docs
     make html
     make latex
@@ -159,6 +162,7 @@ If we want `epub`, like pdf we need to explicitly define it::
 Let's see our script now::
 
     >>> cat(script)
+    #!/bin/bash
     cd ...docs
     make html
     make epub
@@ -188,6 +192,7 @@ We can also have the script run any doctests in the docs while building::
 Let's see our script now::
 
     >>> cat(script)
+    #!/bin/bash
     cd ...docs
     make doctest
     make html
