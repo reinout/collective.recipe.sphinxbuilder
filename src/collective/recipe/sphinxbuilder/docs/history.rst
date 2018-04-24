@@ -5,7 +5,7 @@ Changes
 1.1 (unreleased)
 ================
 
-- Nothing changed yet.
+- Support other shells than `bash`. [icemac]
 
 
 1.0 (2016-07-11)
