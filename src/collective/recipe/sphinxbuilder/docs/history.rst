@@ -2,7 +2,7 @@
 Changes
 =======
 
-1.1 (unreleased)
+1.1 (2018-04-24)
 ================
 
 - Support other shells than `bash`. [icemac]

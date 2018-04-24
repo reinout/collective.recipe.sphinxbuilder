@@ -17,7 +17,7 @@ def read(*rnames):
             return f.read()
 
 
-version = '1.1.dev0'
+version = '1.1'
 
 long_description = u'\n\n'.join([
     read('README.rst'),
